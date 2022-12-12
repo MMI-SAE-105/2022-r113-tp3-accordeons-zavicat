@@ -14,21 +14,25 @@
 </body>
 <div class="accordeon">
   <section x-data="{
-    isOpen:true,
+    isOpen1:true,
   }">
-    <button @click="isOpen=! isOpen">bouton 1</button>
-    <p x-show="isOpen" x-transition.duration.500ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi architecto, animi blanditiis quasi optio quis.
+    <button @click="isOpen1=! isOpen1">bouton 1</button>
+    <p x-show="isOpen1" x-transition.duration.500ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi architecto, animi blanditiis quasi optio quis.
       Error ipsa, fugit rem placeat labore, porro mollitia recusandae tempora accusantium, animi atque enim pariatur?
     </p>
   </section>
-  <section>
-    <button>bouton 2</button>
-    <p>Corrupti est placeat, corporis eveniet dolorum autem ipsam ratione ducimus laborum deserunt beatae a dolores
+  <section x-data="{
+    isOpen2:true,
+  }">
+    <button @click="isOpen2=! isOpen2">bouton 1</button>
+    <p x-show="isOpen2" x-transition.duration.500ms>Corrupti est placeat, corporis eveniet dolorum autem ipsam ratione ducimus laborum deserunt beatae a dolores
       sequi commodi ipsum ut quos excepturi modi qui maiores ullam aliquid culpa. Architecto, possimus dolorem.</p>
   </section>
-  <section>
-    <button>bouton 3</button>
-    <p>Itaque necessitatibus quasi, illo ut cum veniam. Repudiandae fuga quos eaque, tenetur laudantium quidem
+  <section x-data="{
+    isOpen3:true,
+  }">
+    <button @click="isOpen3=! isOpen3">bouton 1</button>
+    <p x-show="isOpen3" x-transition.duration.500ms>Itaque necessitatibus quasi, illo ut cum veniam. Repudiandae fuga quos eaque, tenetur laudantium quidem
       aspernatur a voluptate, perspiciatis cumque sit. Amet eum corporis voluptatum. Rem veniam delectus laboriosam vel
       quae.</p>
   </section>
