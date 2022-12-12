@@ -22,8 +22,8 @@
         </figcaption>
       </figure>
     </li>
-    <li>
-      <figure>
+    <li :class="{actif:isOpen === 1,}">
+      <figure @click="isOpen = 1">
         <img src="https://picsum.photos/100?random=2" alt="" width="102">
         <figcaption>
           <h3>Ducimus, asperiores recusandae!</h3>
