@@ -27,15 +27,25 @@
       porro beatae exercitationem. Repellendus nihil laborum consequatur expedita harum impedit voluptas quam ipsum
       sit hic.</p>
   </section>
-    <section>
-      <button>bouton 2</button>
-      <p>Vero soluta facere nostrum. Illum reprehenderit voluptatum aliquam ipsam facere doloremque earum, error delectus suscipit exercitationem magnam aut omnis dolorum sint sapiente dicta ab repellendus nam deleniti itaque molestias sunt?</p>
-    </section>
-    <section>
-      <button>bouton 3</button>
-      <p>Id ullam non, dicta voluptates cumque obcaecati earum, repellat quasi enim nostrum similique quaerat adipisci reprehenderit corrupti, cum maxime nisi vitae veniam praesentium! Similique illum numquam quia vero necessitatibus deleniti.</p>
-    </section>
-  </div>
+  <section x-data="{isOpen1:true}">
+    <button @click="isOpen1=! isOpen1">bouton 2</button>
+    <p x-show="isOpen1" x-collapse>Placeat neque, blanditiis omnis sint dignissimos beatae delectus
+      commodi. Ipsa eligendi
+      ducimus
+      nostrum esse,
+      et culpa natus iure unde atque quod facilis non aperiam distinctio veritatis, repudiandae magni! Aspernatur,
+      molestiae.</p>
+  </section>
+  <section x-data="{
+    isOpen2:true,
+  }">
+    <button @click="isOpen2=! isOpen2">bouton 3</button>
+    <p x-show="isOpen2" x-collapse>Ex quo quos culpa eaque nostrum rerum quasi autem, totam
+      consequatur tempore nisi repellendus
+      dignissimos
+      harum, sed cum at libero laborum veniam? Aliquid odio quia pariatur, eligendi accusamus veritatis sunt.</p>
+  </section>
+</div>
 </body>
 
 </html>
