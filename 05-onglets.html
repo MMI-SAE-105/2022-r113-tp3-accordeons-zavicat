@@ -11,29 +11,29 @@
 
 <body>
   <h1>Onglets</h1>
-  <div id="onglets" x-data="{
-    ouvert : 1,
-   }">
-   <ul role="tablist">
-    <li role="tab">Onglet 1</li>
-    <li role="tab">Onglet 2</li>
-    <li role="tab">Onglet 3</li>
-   </ul>
-   <div>
-    <div role="tabpanel" x-show="ouvert === 1">
-      <h1>Panneau 1</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quae dolorum sapiente! Aliquid a maiores totam et ipsum. Incidunt ad labore nobis optio eum doloribus aliquid, enim dolore dolorem atque?</p>
-    </div>
-    <div role="tabpanel" x-show="ouvert === 2">
-      <h1>Panneau 2</h1>
-      <p>Vero exercitationem pariatur necessitatibus eaque, temporibus rerum laborum ducimus nihil culpa laboriosam, dolor blanditiis iure enim similique! Unde, tenetur tempore minima iusto laudantium quidem eum odit eligendi quaerat dicta eaque?</p>
-    </div>
-    <div role="tabpanel" x-show="ouvert === 3">
-      <h1>Panneau 3</h1>
-      <p>Ea eveniet sequi corrupti odit? Distinctio sunt fuga cupiditate repellendus ea assumenda aliquid, laborum modi quo praesentium saepe consequuntur tempore, reiciendis nostrum, ratione amet consequatur neque officia voluptate quae aspernatur?</p>
-    </div>
-   </div>
+  <div id="onglets">
+    <ul role="tablist">
+      <li @click="ouvert = 1" :class="{'visible' : ouvert === 1}" role="tab">Onglet 1</li>
+      <li @click="ouvert = 2" :class="{'visible' : ouvert === 2}" role="tab">Onglet 2</li>
+      <li @click="ouvert = 3" :class="{'visible' : ouvert === 3}" role="tab">Onglet 3</li>
+    </ul>
   </div>
+
+  <div id="panneaux">
+    <div class="tab" role="tabpanel" x-show="ouvert === 1">
+      <h1>Panneau 1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat aliquid labore cumque! Ratione quasi voluptatum architecto perferendis, cumque sed blanditiis animi quos. Aliquam exercitationem placeat optio consequuntur veniam. Obcaecati, quis!</p>
+    </div>
+    <div class="tab" role="tabpanel" x-show="ouvert === 2">
+      <h1>Panneau 2</h1>
+      <p>At, rerum. Consequatur ut distinctio quam, maxime magnam cum ipsam accusantium quos reprehenderit modi corrupti porro sint, sunt voluptatem facilis quod repudiandae eos ullam, quia unde labore non delectus. Harum.</p>
+    </div>
+    <div class="tab" role="tabpanel" x-show="ouvert === 3">
+      <h1>Panneau 3</h1>
+      <p>Quos exercitationem aut nemo, repellendus porro molestiae alias hic quas accusamus, dolores accusantium ullam aliquam at excepturi. Exercitationem, distinctio, illo quaerat quisquam at nesciunt neque libero hic facilis nam non!</p>
+    </div>
+  </div>
+
 </body>
 
 </html>
