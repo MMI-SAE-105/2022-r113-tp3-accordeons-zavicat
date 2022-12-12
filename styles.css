@@ -61,7 +61,6 @@ transition: all 1s ease-in-out;
     /* pour éviter les "padding" par défaut */
     padding: 0;
     display: block;
-    vertical-align: top;
 }
 
 
