@@ -17,10 +17,16 @@
 <body>
   <h1>Accordéon avec <code>x-collapse</code></h1>
   <div class="accordeon">
-    <section>
-      <button>bouton 1</button>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque id repudiandae temporibus, rerum ex officia sint modi cupiditate eius cumque quae, maxime totam aperiam? Cumque similique facilis deleniti error maiores.</p>
-    </section>
+    <section x-data="{
+      isOpen:true,
+    }">
+    <button @click="isOpen=! isOpen">bouton 1</button>
+    <p x-show="isOpen" x-collapse>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ad
+      similique error odit,
+      voluptas molestias
+      porro beatae exercitationem. Repellendus nihil laborum consequatur expedita harum impedit voluptas quam ipsum
+      sit hic.</p>
+  </section>
     <section>
       <button>bouton 2</button>
       <p>Vero soluta facere nostrum. Illum reprehenderit voluptatum aliquam ipsam facere doloremque earum, error delectus suscipit exercitationem magnam aut omnis dolorum sint sapiente dicta ab repellendus nam deleniti itaque molestias sunt?</p>
