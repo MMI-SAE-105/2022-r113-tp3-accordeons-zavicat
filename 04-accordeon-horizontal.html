@@ -12,9 +12,9 @@
 
 <body>
   <h1>Accordéon horizontal</h1>
-  <ul id="accordeon">
-    <li>
-      <figure>
+  <ul id="accordeon" x-data="{isOpen:0}">
+    <li :class="{actif:isOpen = 0,}">
+      <figure @click="isOpen = 0">
         <img src="https://picsum.photos/100?random=1" alt="" width="102">
         <figcaption>
           <h3>Lorem, ipsum dolor.</h3>
