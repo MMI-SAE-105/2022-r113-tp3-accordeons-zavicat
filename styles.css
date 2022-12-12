@@ -63,3 +63,34 @@ transition: all 1s ease-in-out;
     display: block;
     vertical-align: top;
 }
+
+
+
+#onglets li {
+    display: inline-block;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#onglets li.visible {
+    background-color: red;
+    color: white;
+    border-color: black;
+}
+
+#onglets li:hover {
+    border-color: red;
+}
+
+#panneaux {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 10px;
+}
+
+.tab {
+    position: absolute;
+}
